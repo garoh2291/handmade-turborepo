@@ -1,0 +1,34 @@
+{
+  "name": "@handmade/tailwind-config",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.ts",
+  "license": "MIT",
+  "files": [
+    "index.ts",
+    "postcss.js"
+  ],
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "eslint .",
+    "format": "prettier --check \"**/*.{mjs,ts,md,json}\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@handmade/eslint-config": "workspace:*",
+    "@handmade/typescript-config": "workspace:*",
+    "@handmade/prettier-config": "workspace:*",
+    "@types/node": "^22.5.5",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@handmade/eslint-config/base"
+    ]
+  },
+  "prettier": "@handmade/prettier-config"
+}

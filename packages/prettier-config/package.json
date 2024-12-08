@@ -1,0 +1,20 @@
+{
+    "name": "@handmade/prettier-config",
+    "private": true,
+    "version": "0.1.0",
+    "main": "index.mjs",
+    "scripts": {
+        "clean": "rm -rf .turbo node_modules",
+        "format": "prettier --check \"**/*.{mjs,ts,md,json}\"",
+        "typecheck": "tsc --noEmit"
+    },
+    "prettier": "@handmade/prettier-config",
+    "dependencies": {
+        "@handmade/typescript-config": "workspace:*"
+    },
+    "devDependencies": {
+        "prettier": "^3.2.5",
+        "prettier-plugin-organize-imports": "^4.0.0",
+        "prettier-plugin-tailwindcss": "^0.6.6"
+    }
+}

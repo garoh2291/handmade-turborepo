@@ -1,0 +1,53 @@
+{
+  "name": "@handmade/website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "lucide-react": "^0.441.0",
+    "next": "14.2.11",
+    "react": "^18",
+    "react-dom": "^18",
+    "swiper": "^11.1.14",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@handmade/eslint-config": "workspace:*",
+    "@handmade/prettier-config": "workspace:*",
+    "@handmade/tailwind-config": "workspace:*",
+    "@handmade/typescript-config": "workspace:*",
+    "@handmade/ui": "workspace:*",
+    "@lottiefiles/react-lottie-player": "^3.5.4",
+    "@svgr/webpack": "^8.1.0",
+    "@types/node": "^20",
+    "@types/nodemailer": "^6.4.16",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.11",
+    "framer-motion": "^11.5.6",
+    "i": "^0.3.7",
+    "nodemailer": "^6.9.15",
+    "npm": "^10.8.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@handmade/eslint-config/base",
+      "@handmade/eslint-config/next",
+      "@handmade/eslint-config/react"
+    ],
+    "ignorePatterns": [
+      "fragment-masking.ts"
+    ]
+  },
+  "prettier": "@handmade/prettier-config"
+}
